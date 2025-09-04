@@ -1,0 +1,19 @@
+name: SelfStorage
+version: 1.0
+main: com.furkan.selfstorage.SelfStorage
+apiversion: 1.16
+author: [Furkan]
+
+commands:
+  storage:
+    description: Ana depo komutu.
+    usage: /<command>
+    aliases: [depo]
+
+permissions:
+  selfstorage.use:
+    description: Depo kullanım izni.
+    default: true
+  selfstorage.admin:
+    description: Admin yetkisi.
+    default: op

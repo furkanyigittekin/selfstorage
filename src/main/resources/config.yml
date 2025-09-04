@@ -1,0 +1,39 @@
+# SelfStorage Plugin Ayarları
+
+depo:
+  boyutlar:
+    '1g': 5    # 1 günlük depo boyutu (5x5)
+    '3g': 7    # 3 günlük depo boyutu (7x7)
+    '1w': 10   # 1 haftalık depo boyutu (10x10)
+
+  fiyatlar:
+    '1g': 100.0   # 1 günlük depo fiyatı
+    '3g': 250.0   # 3 günlük depo fiyatı
+    '1w': 500.0   # 1 haftalık depo fiyatı
+
+  max_kapasite: 54  # Depo başına maksimum eşya slotu (54 = çift sandık)
+
+zaman:
+  kontrol_periyodu_saniye: 600  # Süre kontrolü (10 dakika)
+
+izinler:
+  kullanici:
+    temel: selfstorage.use
+  admin:
+    yetki: selfstorage.admin
+
+gui:
+  menutitle: "§6Depo Menüsü"
+  itemlar:
+    satin_al:
+      malzeme: CHEST
+      isim: "§aDepo Satın Al"
+    depo_gor:
+      malzeme: BOOK
+      isim: "§eDepomu Gör"
+    sure_uzat:
+      malzeme: EMERALD
+      isim: "§bDepo Süresini Uzat"
+    depo_sil:
+      malzeme: BARRIER
+      isim: "§cDepoyu Sil"
